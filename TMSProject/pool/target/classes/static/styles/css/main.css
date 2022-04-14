@@ -1,0 +1,464 @@
+html{
+    height: 100%;
+
+}
+
+body {
+    min-width: 320px;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    color: #626262;
+
+}
+
+.w-100{
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    color: #b4ad9e;
+}
+
+a:hover {
+    color: #898377;
+}
+
+p {
+    line-height: 1.5rem;
+}
+
+h2, h3 {
+    margin: 1rem 0;
+    font-size: 30px;
+}
+
+header .navbar-light {
+    color: #fff;
+}
+
+header .navbar-brand {
+    font-size: 30px;
+    color: #000;
+    text-transform: uppercase;
+}
+
+header .nav-item {
+    text-transform: uppercase;
+    margin-left: 50px;
+}
+
+header .nav-item::after {
+    content: '';
+    display: block;
+    width: 100%;
+    background-color: #ccc;
+    height: 1px;
+    transform: scale(0);
+    transition: all .3s;
+}
+
+header .nav-item:hover::after {
+    transform: scale(1);
+}
+
+.slider {
+    margin-bottom: 70px;
+}
+
+.d-block {
+    min-height: 100%;
+}
+
+.post-category,
+.link-more {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 14px;
+    color: #b4ad9e;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+.post-title a {
+    color: #626262;
+}
+
+
+.grid-posts {
+    margin-top: 60px;
+    margin-bottom: 40px;
+}
+
+.grid-posts .card {
+    border: 0;
+    margin-bottom: 100px;
+}
+
+.grid-posts .card-body{
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.grid-posts .card-img-top{
+    max-height: 470px;
+    border-radius: 0;
+}
+
+.signup{
+    background-color: #f0f0f0;
+    padding: 70px 0;
+}
+
+.signup h3{
+    color: #333;
+}
+
+.btn-reserv{
+    padding: 1rem 2rem;
+    border-color: #626262;
+    border-radius: 0;
+}
+
+.link-reserv{
+    text-decoration: none;
+    color: black;
+}
+
+.link-reserv:hover{
+    text-decoration: none;
+    color: #f0f0f0;
+}
+
+.after-posts{
+    margin-top: 70px;
+}
+
+footer{
+    background-color: #f0f0f0;
+    padding: 25px 0;
+    color: #000;
+    text-align: center;
+}
+
+.message{
+    padding: 0 0 10px 0;
+}
+.roles{
+    padding: 0 0 10px 0;
+}
+.check-roles{
+    margin-left: 5px;
+    margin-right: 3px;
+}
+
+.footer-right a{
+    color: #626262;
+    margin-left: 20px;
+    justify-content: center;
+}
+
+
+.bodyRegistr {
+    height: 100%;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+}
+
+
+.formRegistration {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background: white;
+    width: 300px;
+    padding: 40px;
+    position: absolute;
+    border-radius: 25px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    box-shadow: 0 4px 16px #2c3e50
+}
+
+.formRegistration h1 {
+    font-weight: 400;
+    justify-content: center;
+    text-align: center;
+}
+
+.formRegistration input[type="text"], .formRegistration input[type="password"] {
+    display: block;
+    background: none;
+    margin: 10px auto;
+    text-align: center;
+    border: 2px solid;
+    padding: 14px 10px;
+    width: 200px;
+    outline: none;
+    color: black;
+    border-radius: 24px;
+    transition: 0.25s;
+}
+
+.formRegistration input[type="text"]:focus, .formRegistration input[type="password"]:focus {
+    width: 290px;
+    border-color: #86A8E7;
+}
+
+.formRegistration input[type="submit"] {
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid;
+    padding: 14px 40px;
+    outline: none;
+    color: black;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer;
+}
+
+.formRegistration input[type="submit"]:hover {
+    background: #86A8E7;
+    border-color: #86A8E7;
+}
+
+.header-reservation {
+    height: 100vh;
+    background: url("/images/reservation.jpeg") no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.header-reservation:before {
+    content: '';
+    position: absolute;
+    /* top: 0;
+     left: 0;
+     right: 0;
+     bottom: 0;*/
+    width: 100%;
+    height: 100%;
+    background: rgb(10 8 5 / 50%);
+}
+
+.center {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #fff;
+}
+
+.formWrapper {
+    background: white;
+    color: #222;
+    padding: 15px 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 16px #2c3e50;
+}
+
+
+footer {
+    margin-top: 60px;
+
+
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.center h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-reservation {
+    font-size: 20px;
+    font-family: monospace;
+    color: #fff;
+    background: linear-gradient(to left, #bdc3c7, #2c3e50, #bdc3c7);
+    text-decoration: none;
+    padding: 5px 70px;
+    border-radius: 10px;
+    background-size: 200%;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.btn-reservation:hover {
+    background-position: right;
+}
+
+.center-reviews{
+    margin: 0 auto;
+    width: 1200px;
+    max-width: 95%;
+}
+
+.img-text{
+    width: 100%;
+    height: 300px;
+    display: block;
+    text-align: center;
+    padding: 40% 5%;
+    background: #262626;
+    color: #fff;
+    border-radius: 15px;
+
+}
+
+.img-text h2{
+    font-size: 25px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.img-text p{
+    font-size: 14px;
+}
+.single-box{
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.img-area{
+    position: absolute;
+    width: 100px;
+    border: 5px solid #fff;
+    overflow: hidden;
+    top: 15px;
+    left: 125px;
+    border-radius: 50%;
+    max-width:100%;
+    height:auto;
+    display:block;
+
+}
+
+.img-area img{
+    max-width:100%;
+    height:auto;
+    display:block;
+
+}
+
+.car-in{
+    left: 0;
+    top: auto;
+    bottom: -17px;
+}
+
+.car-in li{
+    background: #cccccc;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+}
+
+.car-in .active{
+    background: #000000;
+}
+
+.h-rew{
+    text-align: center;
+    margin-top: -50px;
+    margin-bottom: 50px;
+}
+
+.signup{
+    margin-top: 100px;
+}
+
+.starter-template{
+    margin-top: -20px;
+}
+
+.starter-template a{
+    color: #1a73a8;
+}
+
+.con-log{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 70.5vh;
+}
+
+.form__login{
+    width: 300px;
+    padding: 32px;
+    border-radius: 10px;
+    box-shadow: 0 4px 16px #cccccc;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+}
+
+.form__input,
+.form__button{
+    font-family: sans-serif;
+    letter-spacing: 1px;
+    font-size: 16px;
+}
+
+.form__title__login{
+    text-align: center;
+    margin: 0 0 32px 0;
+    font-weight: normal;
+    color: #000000;
+}
+
+.form__group__login{
+    position: relative;
+    margin-bottom: 32px;
+
+}
+
+.form__label {
+    position: absolute;
+    left: 0;
+    z-index: -1;
+    color: #9e9e9e;
+    transition: 0.3s;
+}
+
+.form__input {
+    width: 100%;
+    padding: 0 0 10px 0;
+    border: none;
+    border-bottom: 1px solid #e0e0e0;
+    background-color: transparent;
+    outline: none;
+    transition: 0.3s;
+}
+
+.form__input:focus {
+    border-bottom: 1px solid #1a73a8;
+}
+
+.form__button{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #0071f0;
+    outline: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.form__button:focus,
+.form__button:hover{
+    background-color: rgba(0, 113, 240, 0.7);
+}
+
+.form__input:focus ~ .form__label,
+.form__input:not(:placeholder-shown) ~ .form__label{
+    top: -18px;
+    font-size: 12px;
+    color: #e0e0e0;
+}

@@ -1,0 +1,19 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org" lang="ru"
+      xmlns:sec = "http://www.thymeleaf.org/extras/spring-security">
+<head>
+    <title>MainPage</title>
+    <div th:replace="fragments/footer :: footer-css"></div>
+    <script src="https://kit.fontawesome.com/ad58208259.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div th:replace="fragments/header :: header"></div>
+<div th:replace="fragments/carousel :: carousel"></div>
+<div th:replace="fragments/post :: post"></div>
+<div th:replace="fragments/grid :: grid"></div>
+<div th:replace="fragments/carousel-reviews :: carousel-reviews"></div>
+<div th:replace="fragments/section :: section"></div>
+<div th:replace="fragments/footer :: footer"></div>
+<div th:replace="fragments/js :: js"></div>
+</body>
+</html>

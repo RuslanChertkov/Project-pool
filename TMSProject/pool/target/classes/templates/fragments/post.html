@@ -1,0 +1,29 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org" lang="ru">
+<head>
+    <div th:replace="fragments/footer :: footer-css"></div>
+</head>
+<body>
+<div th:fragment="post">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="single-post">
+                    <h3 class="post-category">Бильярдная</h3>
+                    <h2 class="post-title"><a class="post-title" th:href="@{/about}">Проведите выходные с нами</a></h2>
+                    <p>В нашем бильярдном клубе установлены 10 столов для русского бильярда и 9 столов для американского пула.
+                        Мы создали отличные условия для дружеских игр, профессиональных турниров и тренировок с маркером.
+                        На территории клуба имеется ремонтная мастерская, поэтому поломки, случающиеся в пылу борьбы, не смогут
+                        испортить Ваше настроение! Беспокоиться не нужно и о ценных вещах, для этого у нас есть индивидуальные ячейк
+                        и в камерах хранения.</p>
+                    <form th:action="@{/reviews}">
+                        <p><a th:href="@{/reviews}" class="link-more">Оставьте ваш отзыв</a></p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

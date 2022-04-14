@@ -1,0 +1,34 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+    <div th:fragment="footer-css">
+        <div th:replace="fragments/header :: header-css"></div>
+        <script src="https://kit.fontawesome.com/ad58208259.js" crossorigin="anonymous"></script>
+    </div>
+</head>
+<body class="body-footer">
+<div th:fragment="footer">
+    <footer>
+        <div class="container">
+            <div class="container content">
+                <div class="d-sm-flex justify-content-between">
+                    <div class="footer-left">
+                        <p>© 2022 ПулЯ.by</p>
+                    </div>
+
+                    <div class="footer-right">
+                        <span>Подписаться:</span>
+                        <a th:href="@{/}"><i class="fa-brands fa-facebook"></i></a>
+                        <a th:href="@{/}"><i class="fa-brands fa-instagram"></i></a>
+                        <a th:href="@{/}"><i class="fa-brands fa-twitter"></i></a>
+                    </div>
+                    </div>
+                </div>
+            <div class="starter-template">
+              <a th:href="@{/user}">Страница пользователя</a>
+            </div>
+            </div>
+    </footer>
+</div>
+</body>
+</html>

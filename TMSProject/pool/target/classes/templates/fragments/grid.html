@@ -1,0 +1,66 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org" lang="ru">
+<head>
+    <div th:replace="fragments/footer :: footer-css"></div>
+</head>
+<body>
+<div th:fragment="grid">
+    <div class="grid-posts">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card">
+                        <img class="card-img-top" th:src="@{images/grid-1.jpeg}" alt="Card image cap">
+                        <div class="card-body">
+                            <h3 class="post-category">Столы</h3>
+                            <h5 class="post-title">"Стар Ⅱ"</h5>
+                            <p class="card-text">«Старт» - одна из немногих компаний в России, которая производит снукерные бильярдные столы
+                                европейского уровня. «Стар Ⅱ (снукер)» соответствует всем требованиям, предъявляемым столам для снукера.
+                                Стол укомплектован особой снукерной резиной Г-образного профиля и специальным сукном Manchester - SNOOKER.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card">
+                        <img class="card-img-top" th:src="@{images/grid-2.jpeg}" alt="Card image cap">
+                        <div class="card-body">
+                            <h3 class="post-category">Столы</h3>
+                            <h5 class="post-title"> «Стар»</h5>
+                            <p class="card-text">Бильярдный стол «Стар» отвечает всем требованиям, предъявляемым к профессиональным
+                                столам для бильярда. Это одна из старейших разработок в профессиональной серии фабрики «Старт».
+                                Технология изготовления этого стола отработана и проверена временем. </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card">
+                        <img class="card-img-top" th:src="@{images/grid-3.jpeg}" alt="Card image cap">
+                        <div class="card-body">
+                            <h3 class="post-category">Кии</h3>
+                            <h5 class="post-title">Viking Valhalla VA110</h5>
+                            <p class="card-text">Изготовлен из наиболее подходящего для производства киев дерева -
+                                североамериканского скалистого клена.
+                                Скрутка усилена внешним металлическим кольцом на турнике.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card">
+                        <img class="card-img-top" th:src="@{images/grid-4.jpeg}" alt="Card image cap">
+                        <div class="card-body">
+                            <h3 class="post-category">Кии</h3>
+                            <h5 class="post-title">Viking Valhalla VA109</h5>
+                            <p class="card-text">Изготовлен из наиболее подходящего для производства киев дерева -
+                                североамериканского скалистого клена.
+                                Скрутка усилена внешним металлическим кольцом на турнике.</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

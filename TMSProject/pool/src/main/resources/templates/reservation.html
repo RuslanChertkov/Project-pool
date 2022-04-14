@@ -1,0 +1,78 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org" lang="ru"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Reservation form</title>
+    <div th:replace="fragments/footer :: footer-css"></div>
+</head>
+<body>
+<header class="header-reservation">
+    <div class="center">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="formWrapper">
+                        <h2 class="form-title">Бронь</h2>
+                        <form action="reservation.html" th:action="@{/reservation}" method="post" th:object="${reservation}">
+                            <div class="form-group">
+                                <label for="inputName">ФИО</label>
+                                <input type="text" class="form-control" name="full_name" id="inputName" placeholder="ФИО" th:field="*{fio}">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="inputPhoneNumber">Ваш номер телефона</label>
+                                <input type="text" class="form-control" name="phone_number" id="inputPhoneNumber"
+                                       placeholder="Номер телефона" th:field="*{phoneNumber}">
+                            </div>
+                            <div class="form-group">
+                                <label for="typeOfBilliard">Бронируемый бильярд</label>
+                                <select name="type_of_billiard" id="typeOfBilliard" class="form-control" th:field="*{type}">
+                                    <option th:value="${T(com.example.pool.model.PoolType).RUSSIAN}">Русский бильярд</option>
+                                    <option th:value="${T(com.example.pool.model.PoolType).AMERICAN}">Американский бильярд</option>
+                                </select>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label for="inputDate">Дата</label>
+                                        <input type="date" name="date" class="form-control" id="inputDate"
+                                               placeholder="Дата" th:field="*{date}">
+                                    </div>
+
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label for="inputTime">Время</label>
+                                        <input type="time" name="time" class="form-control" id="inputTime"
+                                               placeholder="Время" th:field="*{time}">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="inputPeriodOfTime">Пожелания по бронированию</label>
+                                <textarea rows="2" cols="20" class="form-control" name="wishes" id="inputPeriodOfTime"
+                                          placeholder="Мои пожелания" th:field="*{notes}"></textarea>
+                            </div>
+                            <input type="hidden" th:name="${_csrf}" th:value="${_csrf.token}"/>
+                            <div class="flex">
+                                <button type="submit" class="form__button">Отправить</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-sm-8">
+                    <h1></h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A autem debitis delectus esse minima neque nostrum, perspiciatis quaerat quam quos sit tenetur. Asperiores doloribus explicabo, nostrum placeat qui
+                        rem saepe.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<div th:replace="fragments/js::js"></div>
+</body>
+</html>
+

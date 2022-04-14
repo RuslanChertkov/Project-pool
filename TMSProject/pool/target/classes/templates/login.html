@@ -1,0 +1,38 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org" lang="ru"><head>
+    <meta charset="UTF-8">
+    <title>Login Page</title>
+    <div th:replace="fragments/footer :: footer-css"></div>
+</head>
+<body class="body__login">
+<div th:replace="fragments/header::header"></div>
+<div class="con-log">
+    <form th:action="@{/auth}" method="post" class="form__login"><!--
+        <div th:if="${param.error}">
+            <div>
+                Неверный email или пароль.
+            </div>
+        </div>
+        <div th:if="${param.logout}">
+            <div>
+                Вы успешно вышли.
+            </div>
+        </div>-->
+        <h1 class="form__title__login">Вход</h1>
+
+        <div class="form__group__login">
+            <input type="email" name="email" class="form__input" placeholder=" " required>
+            <label th:for="user_email" class="form__label">Email</label>
+        </div>
+
+        <div class="form__group__login">
+            <input type="password" name="password" class="form__input" placeholder=" " required>
+            <label th:for="password" class="form__label">Пароль</label>
+        </div>
+        <input type="hidden" th:name="${_csrf.parameterName}" th:value="${_csrf.token}"/>
+        <button class="form__button">Войти</button>
+    </form>
+</div>
+<div th:replace="fragments/footer::footer"></div>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org" lang="ru">
+<head>
+    <div th:replace="fragments/footer :: footer-css"></div>
+</head>
+<body>
+<div th:fragment="section">
+    <section class="signup">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h3 class="text-center">Забронируй столик уже сейчас!</h3>
+                    <div class="col text-center after-posts">
+                        <form th:action="@{/reservation}">
+                            <button type="button" class="btn btn-outline-secondary btn-reserv"><a class="link-reserv" th:href="@{/reservation}">Забронировать</a></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+</body>
+</html>
